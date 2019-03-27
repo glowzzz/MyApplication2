@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/question_text_View"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="24dp"
+        android:gravity="center"
+        android:text="hello.world"
+        android:textSize="24sp"
+       />
+    <Button
+        android:id="@+id/buttips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/buttonStyle"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="12dp"
+        android:text="@string/tips"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal"
+        android:layout_margin="12dp"
+        >
+        <Button
+            android:id="@+id/butture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonStyle"
+            android:text="@string/Correct"/>
+        <Button
+            android:id="@+id/butfalse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonStyle"
+            android:text="@string/Error"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/butnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        style="?android:attr/buttonStyle"
+        android:enabled="false"
+        android:drawableEnd="@drawable/next"
+        android:layout_margin="12dp"
+        android:text="@string/next"/>
+
+</FrameLayout>
+</android.support.constraint.ConstraintLayout>

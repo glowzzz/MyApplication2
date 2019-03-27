@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">我的Android复习手册</string>
+    <string name="Answer_text">你已经查看答案了</string>
+    <string name="About_me">联系我们</string>
+</resources>
